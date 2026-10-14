@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carátula</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'time', sans-serif;
+            overflow: hidden;
+        }
+        .caratula-poster {
+              background-image: url(sistemas.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 50px 20px;
+            color: #ffffff;
+            text-align: center; 
+        }
+        .header-institucion {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+        .centro-contenido {
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        .titulo-principal {
+            font-size: 3.8rem;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+        }
+        .tabla-datos {
+            border-collapse: collapse;
+            margin: 0 auto; 
+            text-align: left; 
+        }
+
+        .tabla-datos td {
+            padding: 8px 15px;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+        }
+        .col-etiqueta {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: #fffefe;
+            text-align: right; 
+            width: 160px;
+        
+        }
+
+        
+        .col-valor {
+            font-weight: 400;
+            padding-left: 20px !important;
+        }
+
+        
+        .footer-vacio {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+        }
+        @media (max-width: 768px) {
+            .header-institucion {
+                font-size: 1rem;
+                letter-spacing: 3px;
+            }
+            .titulo-principal {
+                font-size: 2.3rem;
+            }
+            .col-etiqueta {
+                width: 120px;
+                font-size: 0.75rem;
+            }
+            .tabla-datos td {
+                font-size: 1rem;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caratula-poster">
+        <header class="header-institucion">
+            INSTITUTO TECNICO SUPERIOR DE <br>EDUCACION COMERCIAL SUCRE <br>"ITSEC SUCRE"
+        </header>
+        
+        
+        <div class="centro-contenido">
+            <h1 class="titulo-principal"> FEXPO ITSEC SUCRE</h1>
+            
+            <table class="tabla-datos">
+                <tr>
+                    <td class="col-etiqueta">Materia</td>
+                    <td class="col-valor">DICEÑO Y PPROGRAMACION WEB 1</td>
+                </tr>
+                <tr>
+                    <td class="col-etiqueta">Autor</td>
+                    <td class="col-valor">SALVATIERRA YUCRA ADALITH ADHEMAR </td>
+                </tr>
+                <tr>
+                    <td class="col-etiqueta">Docente</td>
+                    <td class="col-valor">Ing. HUGO ALFREDO TABORGA PAZ</td>
+                </tr>
+                <tr>
+                    <td class="col-etiqueta">Fecha</td>
+                    <td class="col-valor">13 de Octubre de 2026</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-vacio">
+            Año 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
